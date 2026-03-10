@@ -7,7 +7,12 @@ import Greeter from './greeter.component';
 const mockUseConfig = jest.mocked(useConfig<Config>);
 
 it('displays the expected default text', () => {
-  const config: Config = { casualGreeting: false, whoToGreet: ['World'] };
+  const config: Config = {
+    casualGreeting: false,
+    whoToGreet: ['World'],
+    scdFormUuid: '',
+    consultationEncounterTypeUuid: '',
+  };
   mockUseConfig.mockReturnValue(config);
 
   render(<Greeter />);
@@ -19,6 +24,8 @@ it('casually greets my friends', () => {
   const config: Config = {
     casualGreeting: true,
     whoToGreet: ['Ariel', 'Barak', 'Callum'],
+    scdFormUuid: '',
+    consultationEncounterTypeUuid: '',
   };
   mockUseConfig.mockReturnValue(config);
 

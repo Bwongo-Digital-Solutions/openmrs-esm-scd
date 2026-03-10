@@ -35,9 +35,21 @@ export const configSchema = {
     },
     _validators: [validator((v) => v.length > 0, 'At least one person must be greeted.')],
   },
+  scdFormUuid: {
+    _type: Type.String,
+    _default: '',
+    _description: 'The UUID of the SCD consultation form used to filter encounters.',
+  },
+  consultationEncounterTypeUuid: {
+    _type: Type.String,
+    _default: '',
+    _description: 'The UUID of the consultation encounter type.',
+  },
 };
 
 export type Config = {
   casualGreeting: boolean;
   whoToGreet: Array<string>;
+  scdFormUuid: string;
+  consultationEncounterTypeUuid: string;
 };

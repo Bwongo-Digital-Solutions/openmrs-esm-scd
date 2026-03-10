@@ -7,7 +7,7 @@
 import { getAsyncLifecycle, defineConfigSchema } from '@openmrs/esm-framework';
 import { configSchema } from './config-schema';
 
-const moduleName = '@openmrs/esm-template-app';
+const moduleName = '@clinicemr/openmrs-esm-scd';
 
 const options = {
   featureName: 'root-world',
@@ -47,3 +47,8 @@ export const redBox = getAsyncLifecycle(() => import('./boxes/extensions/red-box
 export const blueBox = getAsyncLifecycle(() => import('./boxes/extensions/blue-box.component'), options);
 
 export const brandBox = getAsyncLifecycle(() => import('./boxes/extensions/brand-box.component'), options);
+
+export const scdConsultationEncounters = getAsyncLifecycle(
+  () => import('./scd-consultation-encounters/scd-consultation-encounters.component'),
+  options,
+);
