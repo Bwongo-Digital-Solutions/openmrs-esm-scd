@@ -35,3 +35,8 @@ See the [Medication dispensing app](https://github.com/openmrs/openmrs-esm-dispe
 ## Integration
 
 See [Creating a Frontend Module](https://openmrs.atlassian.net/wiki/x/rIIBCQ) for details on how to integrate your custom frontend module into the OpenMRS reference application.
+
+## publish to npmjs
+```
+npm publish --access public --tag latest
+```

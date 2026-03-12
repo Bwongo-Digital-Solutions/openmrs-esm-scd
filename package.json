@@ -1,9 +1,9 @@
 {
-  "name": "@openmrs/esm-template-app",
-  "version": "4.0.0",
+  "name": "@clinicemr/openmrs-esm-scd",
+  "version": "1.0.1",
   "license": "MPL-2.0",
-  "description": "An OpenMRS seed application for building microfrontends",
-  "browser": "dist/openmrs-esm-template-app.js",
+  "description": "OpenMRS ESM module for Sickle Cell Disease (SCD) consultation encounters management",
+  "browser": "dist/openmrs-esm-scd.js",
   "main": "src/index.ts",
   "source": true,
   "scripts": {
@@ -26,18 +26,22 @@
   ],
   "keywords": [
     "openmrs",
-    "microfrontends"
+    "microfrontends",
+    "scd",
+    "sickle-cell-disease",
+    "consultation",
+    "encounters"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/openmrs/openmrs-esm-template-app.git"
+    "url": "git+https://github.com/Bwongo-Digital-Solutions/openmrs-esm-scd.git"
   },
-  "homepage": "https://github.com/openmrs/openmrs-esm-template-app#readme",
+  "homepage": "https://github.com/Bwongo-Digital-Solutions/openmrs-esm-scd#readme",
   "publishConfig": {
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/openmrs/openmrs-esm-template-app/issues"
+    "url": "https://github.com/Bwongo-Digital-Solutions/openmrs-esm-scd/issues"
   },
   "dependencies": {
     "@carbon/react": "^1.83.0",

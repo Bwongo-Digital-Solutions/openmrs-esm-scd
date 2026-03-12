@@ -37,7 +37,12 @@ import Root from './root.component';
 const mockUseConfig = jest.mocked(useConfig<Config>);
 
 it('renders a landing page for the Template app', () => {
-  const config: Config = { casualGreeting: false, whoToGreet: ['World'] };
+  const config: Config = {
+    casualGreeting: false,
+    whoToGreet: ['World'],
+    scdFormUuid: '',
+    consultationEncounterTypeUuid: '',
+  };
   mockUseConfig.mockReturnValue(config);
 
   render(<Root />);

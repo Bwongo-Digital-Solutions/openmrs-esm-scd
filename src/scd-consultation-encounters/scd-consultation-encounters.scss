@@ -1,0 +1,63 @@
+@use '@carbon/styles/scss/spacing';
+@use '@carbon/styles/scss/type';
+
+.container {
+  padding: spacing.$spacing-05;
+  background-color: var(--cds-ui-01);
+  margin-bottom: spacing.$spacing-05;
+}
+
+.heading {
+  @include type.type-style('heading-03');
+  margin-bottom: spacing.$spacing-05;
+  color: var(--cds-text-01);
+}
+
+.encountersList {
+  display: flex;
+  flex-direction: column;
+  gap: spacing.$spacing-04;
+}
+
+.encounterCard {
+  padding: spacing.$spacing-04;
+  background-color: var(--cds-ui-02);
+  border-left: 4px solid var(--cds-interactive-01);
+  border-radius: 4px;
+}
+
+.encounterHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: spacing.$spacing-03;
+}
+
+.encounterDate {
+  @include type.type-style('heading-compact-01');
+  color: var(--cds-text-01);
+}
+
+.encounterType {
+  @include type.type-style('label-01');
+  color: var(--cds-text-02);
+}
+
+.encounterLocation,
+.encounterProviders,
+.encounterObs {
+  @include type.type-style('body-compact-01');
+  color: var(--cds-text-02);
+  margin-top: spacing.$spacing-02;
+}
+
+.error {
+  @include type.type-style('body-compact-01');
+  color: var(--cds-support-01);
+}
+
+.emptyState {
+  @include type.type-style('body-compact-01');
+  color: var(--cds-text-02);
+  font-style: italic;
+}

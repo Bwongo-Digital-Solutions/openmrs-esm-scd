@@ -15,10 +15,15 @@
       "component": "blueBox",
       "slot": "Boxes"
     },
-        {
+    {
       "name": "Brand box",
       "component": "blueBox",
       "slot": "Boxes"
+    },
+    {
+      "name": "SCD Consultation Encounters",
+      "component": "scdConsultationEncounters",
+      "slot": "patient-chart-summary-dashboard-slot"
     }
   ],
   "pages": [
