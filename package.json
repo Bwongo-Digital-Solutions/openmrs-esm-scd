@@ -1,6 +1,6 @@
 {
   "name": "@clinicemr/openmrs-esm-scd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MPL-2.0",
   "description": "OpenMRS ESM module for Sickle Cell Disease (SCD) consultation encounters management",
   "browser": "dist/openmrs-esm-scd.js",
