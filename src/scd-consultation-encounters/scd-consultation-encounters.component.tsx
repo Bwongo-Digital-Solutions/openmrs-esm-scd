@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useConfig } from '@openmrs/esm-framework';
 import { useSCDConsultationEncounters } from './scd-consultation-encounters.resource';
-import { Config } from '../config-schema';
+import { type Config } from '../config-schema';
 import styles from './scd-consultation-encounters.scss';
 
 interface SCDConsultationEncountersProps {
